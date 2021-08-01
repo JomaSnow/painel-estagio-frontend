@@ -1,0 +1,27 @@
+button {
+  height: 3rem;
+  width: 150px;
+  background-color: #008ed0;
+  color: #ffffff;
+  border: 2px solid #008ed0;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007db9;
+  color: #ffffff;
+  border: 2px solid #007db9;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button:disabled:hover {
+  background-color: #008ed0;
+  color: #ffffff;
+  border: 2px solid #008ed0;
+}

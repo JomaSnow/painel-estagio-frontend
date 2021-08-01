@@ -1,0 +1,19 @@
+<span>{{ label }}</span>
+<div class="input-container">
+  <input
+    [id]="name"
+    [name]="name"
+    autocomplete="current-password"
+    required
+    [type]="isPassword ? 'password' : 'text'"
+  />
+  <fa-icon
+    size="xs"
+    [ngStyle]="{
+      color: '#ffffff',
+      position: 'absolute',
+      left: '-20px'
+    }"
+    [icon]="isPassword ? faKey : faUser"
+  ></fa-icon>
+</div>

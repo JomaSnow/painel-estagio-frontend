@@ -1,0 +1,29 @@
+<main>
+  <section></section>
+  <aside>
+    <form>
+      <img alt="logo" src="../../../assets/logo.png" />
+      <app-login-input
+        name="username"
+        [(ngModel)]="username"
+        ngDefaultControl
+        label="Usuário"
+      ></app-login-input>
+      <app-login-input
+        name="password"
+        label="Senha"
+        [isPassword]="true"
+        [(ngModel)]="password"
+        ngDefaultControl
+      ></app-login-input>
+      <app-button
+        [ngStyle]="{ 'align-self': 'flex-end' }"
+        name="Entrar"
+        [disabled]="
+          username.length === 0 || password.length === 0 ? true : false
+        "
+        (btnClick)="handleSubmit()"
+      ></app-button>
+    </form>
+  </aside>
+</main>

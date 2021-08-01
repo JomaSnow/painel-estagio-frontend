@@ -1,0 +1,7 @@
+<button
+  [disabled]="disabled"
+  [ngStyle]="hollow ? { 'background-color': '#ffffff', color: '#008ed0' } : {}"
+  (click)="onClick()"
+  >
+  {{ name.toUpperCase() }}
+</button>
