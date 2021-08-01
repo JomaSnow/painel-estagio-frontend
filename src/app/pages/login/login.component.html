@@ -16,14 +16,20 @@
         [(ngModel)]="password"
         ngDefaultControl
       ></app-login-input>
-      <app-button
-        [ngStyle]="{ 'align-self': 'flex-end' }"
-        name="Entrar"
-        [disabled]="
-          username.length === 0 || password.length === 0 ? true : false
-        "
-        (btnClick)="handleSubmit()"
-      ></app-button>
+      <div class="btn-area">
+        <app-spinner
+          [ngStyle]="loading ? { display: 'block' } : { display: 'none' }"
+        ></app-spinner>
+        <span>{{ errorMsg }}</span>
+        <app-button
+          [ngStyle]="{ 'align-self': 'flex-end' }"
+          name="Entrar"
+          [disabled]="
+            username.length === 0 || password.length === 0 ? true : false
+          "
+          (btnClick)="handleSubmit()"
+        ></app-button>
+      </div>
     </form>
   </aside>
 </main>
