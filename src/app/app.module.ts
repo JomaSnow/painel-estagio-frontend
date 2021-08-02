@@ -13,6 +13,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { TextInputComponent } from './components/text-input/text-input.component';
+import { SelectInputComponent } from './components/select-input/select-input.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -31,6 +33,8 @@ const appRoutes: Routes = [
     SpinnerComponent,
     NavbarComponent,
     HeaderComponent,
+    TextInputComponent,
+    SelectInputComponent,
   ],
   imports: [
     BrowserModule,
