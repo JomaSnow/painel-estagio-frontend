@@ -60,28 +60,31 @@
       ></app-text-input>
     </div>
     <div class="row">
-      <app-text-input
+      <app-select-input
         ngDefaultControl
         [(ngModel)]="perfil"
         name="perfil"
         label="Perfil"
-      ></app-text-input>
-      <app-text-input
+        [selectOptions]="selectOptionsPerfil"
+        ></app-select-input>
+        <app-select-input
         ngDefaultControl
         [(ngModel)]="status"
         name="status"
         label="Status"
-      ></app-text-input>
-      <app-text-input
+        [selectOptions]="selectOptionsStatus"
+        ></app-select-input>
+        <app-select-input
         ngDefaultControl
         [(ngModel)]="atende_a"
         name="atende_a"
         label="Atende a"
-      ></app-text-input>
-    </div>
-    <div class="btn-row">
-      <div class="btn-area">
-        <app-button
+        [selectOptions]="selectOptionsAtendeA"
+        ></app-select-input>
+      </div>
+      <div class="btn-row">
+        <div class="btn-area">
+          <app-button
           name="Pesquisar"
           [hollow]="false"
           (btnClick)="search()"

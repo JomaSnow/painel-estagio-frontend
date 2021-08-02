@@ -1,1 +1,32 @@
-<p>select-input works!</p>
+<div class="input-container">
+  <div
+    class="label-container"
+    [ngStyle]="showLabel ? { display: 'flex' } : { display: 'none' }"
+  >
+    <span>{{ label }}</span
+    ><span
+      [ngStyle]="
+        required
+          ? { display: 'inline', color: 'red', 'margin-left': '2px' }
+          : { display: 'none' }
+      "
+    >
+      *</span
+    >
+  </div>
+
+  <select
+    [id]="name"
+    [name]="name"
+    [required]="required"
+    [ngStyle]="showLabel ? {} : { 'border-radius': '7px' }"
+  >
+    <option
+      *ngFor="let opt of selectOptions"
+      [selected]="opt.selected"
+      [value]="opt.id"
+    >
+      {{ opt.name }}
+    </option>
+  </select>
+</div>

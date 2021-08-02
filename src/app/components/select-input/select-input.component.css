@@ -1,0 +1,38 @@
+:host {
+  flex: 1;
+  margin: 5px 20px;
+}
+.input-container {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.label-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #9c9c9c;
+  border-right: 0;
+  border-radius: 5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #ddd;
+  height: 1.5rem;
+  align-items: center;
+  padding-left: 10px;
+}
+select {
+  flex: 4;
+  border: solid 1px #9c9c9c;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+span {
+  color: #7d7d7d;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

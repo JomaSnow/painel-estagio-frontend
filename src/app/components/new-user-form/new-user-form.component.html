@@ -43,8 +43,22 @@
       ></app-text-input>
     </div>
     <div class="row">
-      <app-text-input label="Perfil" [required]="true"></app-text-input>
-      <app-text-input label="Atende a" [required]="true"></app-text-input>
+      <app-select-input
+        ngDefaultControl
+        [(ngModel)]="perfil"
+        name="perfil"
+        label="Perfil"
+        [required]="true"
+        [selectOptions]="selectOptionsPerfil"
+      ></app-select-input>
+      <app-select-input
+        ngDefaultControl
+        [(ngModel)]="atende_a"
+        name="atende_a"
+        label="Atende a"
+        [required]="true"
+        [selectOptions]="selectOptionsAtendeA"
+      ></app-select-input>
       <app-text-input
         ngDefaultControl
         [(ngModel)]="senha"
