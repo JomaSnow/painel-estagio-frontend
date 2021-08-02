@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="row-item" [ngStyle]="{ flex: '1' }">
+    <span>{{ item.matricula }}</span>
+  </div>
+  <div class="row-item" [ngStyle]="{ flex: '1' }">
+    <span>{{ item.fonetico }}</span>
+  </div>
+  <div class="row-item" [ngStyle]="{ flex: '3' }">
+    <span>{{ item.nome }}</span>
+  </div>
+  <div class="row-item" [ngStyle]="{ flex: '1' }">
+    <span>{{ item.perfil }}</span>
+  </div>
+  <div class="row-item" [ngStyle]="{ flex: '1' }">
+    <span>{{ item.empresa }}</span>
+  </div>
+  <div class="row-item" [ngStyle]="{ flex: '1' }">
+    <span>{{ item.atende_a }}</span>
+  </div>
+  <div
+    class="row-item"
+    [ngStyle]="{
+      flex: '1',
+      'justify-content': 'center',
+      'padding-left': '0'
+    }"
+  >
+    <span>{{ item.ultimo_acesso }}</span>
+  </div>
+  <div
+    class="row-item"
+    [ngStyle]="{
+      flex: '2',
+      padding: '0',
+      'justify-content': 'space-around'
+    }"
+  >
+    <fa-icon
+      [icon]="faSearch"
+      (click)="showInfo()"
+      [ngStyle]="{ cursor: 'pointer', color: '#008ED0' }"
+    ></fa-icon>
+    <fa-icon
+      [icon]="faEdit"
+      (click)="edit()"
+      [ngStyle]="{ cursor: 'pointer', color: '#008ED0' }"
+    ></fa-icon>
+    <fa-icon
+      [icon]="faCheck"
+      (click)="toggleStatus()"
+      [ngStyle]="
+        item.status === 1
+          ? { cursor: 'pointer', color: 'green' }
+          : { cursor: 'pointer', color: 'red' }
+      "
+    ></fa-icon>
+    <fa-icon
+      [icon]="faTrashAlt"
+      (click)="delete()"
+      [ngStyle]="{ cursor: 'pointer', color: 'red' }"
+    ></fa-icon>
+  </div>
+</div>

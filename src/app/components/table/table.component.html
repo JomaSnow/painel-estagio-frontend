@@ -1,0 +1,65 @@
+<section>
+  <div class="header">
+    <div class="header-item" [ngStyle]="{ flex: '1' }">
+      <span>Matrícula</span>
+    </div>
+    <div class="header-item" [ngStyle]="{ flex: '1' }">
+      <span>Fonético</span>
+    </div>
+    <div class="header-item" [ngStyle]="{ flex: '3' }"><span>Nome</span></div>
+    <div class="header-item" [ngStyle]="{ flex: '1' }"><span>Perfil</span></div>
+    <div class="header-item" [ngStyle]="{ flex: '1' }">
+      <span>Empresa</span>
+    </div>
+    <div class="header-item" [ngStyle]="{ flex: '1' }">
+      <span>Atende a</span>
+    </div>
+    <div
+      class="header-item"
+      [ngStyle]="{
+        flex: '1',
+        'justify-content': 'center',
+        'padding-left': '0'
+      }"
+    >
+      <span>Último acesso</span>
+    </div>
+    <div
+      class="header-item"
+      [ngStyle]="{
+        flex: '2',
+        'justify-content': 'center',
+        'padding-left': '0'
+      }"
+    >
+      <span>Ações</span>
+    </div>
+  </div>
+  <app-table-item *ngFor="let item of userList" [item]="item"></app-table-item>
+  <div class="pagination-container">
+    <fa-icon
+      [icon]="faBackward"
+      size="xs"
+      [ngStyle]="{ color: '#9c9c9c', margin: '0 5px' }"
+    ></fa-icon>
+    <fa-icon
+      [icon]="faCaretLeft"
+      size="1x"
+      [ngStyle]="{ color: '#9c9c9c', margin: '0 5px' }"
+    ></fa-icon>
+    <div class="curent-page-container">1</div>
+    <fa-icon
+      [icon]="faCaretRight"
+      size="1x"
+      [ngStyle]="{ color: '#9c9c9c', margin: '0 5px' }"
+    ></fa-icon>
+    <fa-icon
+      [icon]="faForward"
+      size="xs"
+      [ngStyle]="{ color: '#9c9c9c', margin: '0 5px' }"
+    ></fa-icon>
+  </div>
+  <div class="footer">
+    <span>Total: {{ userList.length }}</span>
+  </div>
+</section>

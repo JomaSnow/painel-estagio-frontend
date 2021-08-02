@@ -17,11 +17,14 @@ import { TextInputComponent } from './components/text-input/text-input.component
 import { SelectInputComponent } from './components/select-input/select-input.component';
 import { NewUserFormComponent } from './components/new-user-form/new-user-form.component';
 import { SearchFormComponent } from './components/search-form/search-form.component';
+import { TableComponent } from './components/table/table.component';
+import { TableItemComponent } from './components/table-item/table-item.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'user', component: NewUserComponent },
+  { path: 'user/:id', component: NewUserComponent },
 ];
 
 @NgModule({
@@ -39,6 +42,8 @@ const appRoutes: Routes = [
     SelectInputComponent,
     NewUserFormComponent,
     SearchFormComponent,
+    TableComponent,
+    TableItemComponent,
   ],
   imports: [
     BrowserModule,

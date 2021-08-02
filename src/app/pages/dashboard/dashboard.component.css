@@ -1,6 +1,7 @@
 main {
   width: 100vw -50px;
-  height: 82vh;
+  min-height: 82vh;
+  height: auto;
   background-color: #f4f4f4;
   position: relative;
   display: flex;
