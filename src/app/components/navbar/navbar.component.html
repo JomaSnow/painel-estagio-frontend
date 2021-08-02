@@ -1,0 +1,14 @@
+<nav>
+  <fa-icon
+    size="lg"
+    [ngStyle]="{ cursor: 'pointer', color: '#ffffff', margin: '13vh 0 0 0' }"
+    (click)="handleClick()"
+    [icon]="isOnDashboard() ? faCogs : faHeadset"
+  ></fa-icon>
+  <fa-icon
+    size="lg"
+    [ngStyle]="{ cursor: 'pointer', color: '#ffffff', margin: '0 0 2vh 0' }"
+    (click)="signOut()"
+    [icon]="faSignOutAlt"
+  ></fa-icon>
+</nav>

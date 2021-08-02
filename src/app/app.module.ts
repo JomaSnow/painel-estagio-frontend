@@ -11,6 +11,8 @@ import { LoginInputComponent } from './components/login-input/login-input.compon
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonComponent } from './components/button/button.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeaderComponent } from './components/header/header.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -27,6 +29,8 @@ const appRoutes: Routes = [
     LoginInputComponent,
     ButtonComponent,
     SpinnerComponent,
+    NavbarComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
