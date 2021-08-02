@@ -3,7 +3,7 @@ button {
   width: 150px;
   background-color: #008ed0;
   color: #ffffff;
-  border: 2px solid #008ed0;
+  border: 1px solid #008ed0;
   border-radius: 5px;
   font-size: 0.7rem;
   cursor: pointer;
@@ -12,7 +12,7 @@ button {
 button:hover {
   background-color: #007db9;
   color: #ffffff;
-  border: 2px solid #007db9;
+  border: 1px solid #007db9;
 }
 
 button:disabled {
@@ -23,5 +23,5 @@ button:disabled {
 button:disabled:hover {
   background-color: #008ed0;
   color: #ffffff;
-  border: 2px solid #008ed0;
+  border: 1px solid #008ed0;
 }

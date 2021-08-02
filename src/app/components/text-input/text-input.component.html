@@ -6,7 +6,9 @@
     <span>{{ label }}</span
     ><span
       [ngStyle]="
-        required ? { display: 'inline', color: 'red', 'margin-left':'2px' } : { display: 'none' }
+        required
+          ? { display: 'inline', color: 'red', 'margin-left': '2px' }
+          : { display: 'none' }
       "
     >
       *</span
@@ -14,7 +16,18 @@
   </div>
 
   <input
+    [id]="name"
+    [name]="name"
     [required]="required"
     [ngStyle]="showLabel ? {} : { 'border-radius': '7px' }"
+    [type]="passwordField ? 'password' : 'text'"
   />
+  <fa-icon
+    [icon]="faLock"
+    [ngStyle]="
+      passwordField
+        ? { display: 'inline', 'padding-left': '30px', color: '#064B90' }
+        : { display: 'none' }
+    "
+  ></fa-icon>
 </div>

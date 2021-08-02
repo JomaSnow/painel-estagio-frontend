@@ -1,11 +1,12 @@
 main {
-  width: 100vw;
-  height: 100vh;
+  width: 100vw -50px;
+  height: 82vh;
   background-color: #f4f4f4;
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 9vh 0 9vh 50px;
+  align-items: center;
+  margin: 9vh 0 9vh 50px;
 }
 footer {
   width: 100%;

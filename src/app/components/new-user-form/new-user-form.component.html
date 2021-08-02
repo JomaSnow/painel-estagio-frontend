@@ -1,0 +1,58 @@
+<section>
+  <form>
+    <div class="title-row">
+      <h2>Usuários</h2>
+      <div class="btn-area">
+        <app-spinner
+          [ngStyle]="loading ? { display: 'inline' } : { display: 'none' }"
+        ></app-spinner>
+        <app-button
+          name="Salvar"
+          (btnClick)="saveUser()"
+          [disabled]="loading"
+        ></app-button>
+        <app-button
+          name="Cancelar"
+          [hollow]="true"
+          (btnClick)="cancel()"
+          [disabled]="loading"
+        ></app-button>
+      </div>
+    </div>
+    <div class="row">
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="nome"
+        name="nome"
+        label="Nome"
+        [required]="true"
+      ></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="matricula"
+        name="matricula"
+        label="Matrícula"
+        [required]="true"
+      ></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="fonetico"
+        name="fonetico"
+        label="Fonético"
+        [required]="true"
+      ></app-text-input>
+    </div>
+    <div class="row">
+      <app-text-input label="Perfil" [required]="true"></app-text-input>
+      <app-text-input label="Atende a" [required]="true"></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="senha"
+        name="senha"
+        label="Senha"
+        [required]="true"
+        [passwordField]="true"
+      ></app-text-input>
+    </div>
+  </form>
+</section>

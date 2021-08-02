@@ -15,6 +15,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TextInputComponent } from './components/text-input/text-input.component';
 import { SelectInputComponent } from './components/select-input/select-input.component';
+import { NewUserFormComponent } from './components/new-user-form/new-user-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
     HeaderComponent,
     TextInputComponent,
     SelectInputComponent,
+    NewUserFormComponent,
   ],
   imports: [
     BrowserModule,
