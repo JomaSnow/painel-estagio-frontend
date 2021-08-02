@@ -1,0 +1,97 @@
+<section>
+  <form>
+    <div class="title-row">
+      <h2>Usuários</h2>
+      <!-- <app-spinner
+            [ngStyle]="loading ? { display: 'inline' } : { display: 'none' }"
+          ></app-spinner> -->
+      <app-button
+        name="Novo"
+        [hollow]="true"
+        (btnClick)="newUser()"
+      ></app-button>
+    </div>
+    <div class="row">
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="admin"
+        name="admin"
+        [showLabel]="false"
+      ></app-text-input>
+    </div>
+    <div class="row">
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="matricula"
+        name="matricula"
+        label="Matrícula"
+      ></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="fonetico"
+        name="fonetico"
+        label="Fonético"
+      ></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="nome"
+        name="nome"
+        label="Nome"
+      ></app-text-input>
+    </div>
+    <div class="row">
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="setor"
+        name="setor"
+        label="Setor"
+      ></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="cnpj"
+        name="cnpj"
+        label="CNPJ Cliente"
+      ></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="razao"
+        name="razao"
+        label="Razão Social"
+      ></app-text-input>
+    </div>
+    <div class="row">
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="perfil"
+        name="perfil"
+        label="Perfil"
+      ></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="status"
+        name="status"
+        label="Status"
+      ></app-text-input>
+      <app-text-input
+        ngDefaultControl
+        [(ngModel)]="atende_a"
+        name="atende_a"
+        label="Atende a"
+      ></app-text-input>
+    </div>
+    <div class="btn-row">
+      <div class="btn-area">
+        <app-button
+          name="Pesquisar"
+          [hollow]="false"
+          (btnClick)="search()"
+        ></app-button>
+        <app-button
+          name="Limpar"
+          [hollow]="true"
+          (btnClick)="clear()"
+        ></app-button>
+      </div>
+    </div>
+  </form>
+</section>
